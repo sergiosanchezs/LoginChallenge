@@ -13,6 +13,9 @@
 		1A5160F62423AE1900483CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5160F42423AE1900483CBA /* Main.storyboard */; };
 		1A5160F82423AE1E00483CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5160F72423AE1E00483CBA /* Assets.xcassets */; };
 		1A5160FB2423AE1E00483CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5160F92423AE1E00483CBA /* LaunchScreen.storyboard */; };
+		1AA594D52423B6B90039751B /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D42423B6B90039751B /* SingUpViewController.swift */; };
+		1AA594D72423B6D50039751B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D62423B6D50039751B /* LoginViewController.swift */; };
+		1AA594D92423B6F00039751B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D82423B6F00039751B /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		1A5160F72423AE1E00483CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A5160FA2423AE1E00483CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A5160FC2423AE1E00483CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA594D42423B6B90039751B /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		1AA594D62423B6D50039751B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1AA594D82423B6F00039751B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		1A5160ED2423AE1900483CBA /* LoginChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				1AA594DA2423B7040039751B /* View Controllers */,
 				1A5160EE2423AE1900483CBA /* AppDelegate.swift */,
 				1A5160F02423AE1900483CBA /* SceneDelegate.swift */,
-				1A5160F22423AE1900483CBA /* ViewController.swift */,
 				1A5160F42423AE1900483CBA /* Main.storyboard */,
 				1A5160F72423AE1E00483CBA /* Assets.xcassets */,
 				1A5160F92423AE1E00483CBA /* LaunchScreen.storyboard */,
 				1A5160FC2423AE1E00483CBA /* Info.plist */,
 			);
 			path = LoginChallenge;
+			sourceTree = "<group>";
+		};
+		1AA594DA2423B7040039751B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A5160F22423AE1900483CBA /* ViewController.swift */,
+				1AA594D42423B6B90039751B /* SingUpViewController.swift */,
+				1AA594D62423B6D50039751B /* LoginViewController.swift */,
+				1AA594D82423B6F00039751B /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +112,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Maria Fernanda";
+				ORGANIZATIONNAME = "Sergio Sanchez";
 				TargetAttributes = {
 					1A5160EA2423AE1900483CBA = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -140,7 +157,10 @@
 			files = (
 				1A5160F32423AE1900483CBA /* ViewController.swift in Sources */,
 				1A5160EF2423AE1900483CBA /* AppDelegate.swift in Sources */,
+				1AA594D52423B6B90039751B /* SingUpViewController.swift in Sources */,
+				1AA594D72423B6D50039751B /* LoginViewController.swift in Sources */,
 				1A5160F12423AE1900483CBA /* SceneDelegate.swift in Sources */,
+				1AA594D92423B6F00039751B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
