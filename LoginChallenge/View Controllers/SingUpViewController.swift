@@ -26,8 +26,19 @@ class SingUpViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpelements()
     }
     
+    func setUpelements(){
+        // Hide the error label
+        errorLabel.alpha = 0
+        // Style the elements in the View
+        CustomUtils.styleTextField(firstNameTextField)
+        CustomUtils.styleTextField(lastNameTextField)
+        CustomUtils.styleTextField(emailTextField)
+        CustomUtils.styleTextField(passwordTextField)
+        CustomUtils.styleFilledButton(signUpButton)
+    }
 
     /*
     // MARK: - Navigation

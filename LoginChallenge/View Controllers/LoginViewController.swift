@@ -22,8 +22,17 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpelements()
     }
     
+    func setUpelements(){
+        // Hide the error label
+        errorLabel.alpha = 0
+        // Style the elements in the View
+        CustomUtils.styleTextField(usernameTextField)
+        CustomUtils.styleTextField(passwordTextField)
+        CustomUtils.styleFilledButton(loginButton)
+    }
 
     /*
     // MARK: - Navigation
