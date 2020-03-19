@@ -16,6 +16,7 @@
 		1AA594D52423B6B90039751B /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D42423B6B90039751B /* SingUpViewController.swift */; };
 		1AA594D72423B6D50039751B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D62423B6D50039751B /* LoginViewController.swift */; };
 		1AA594D92423B6F00039751B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D82423B6F00039751B /* HomeViewController.swift */; };
+		1AA594DD2423CE790039751B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594DC2423CE790039751B /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1AA594D42423B6B90039751B /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		1AA594D62423B6D50039751B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1AA594D82423B6F00039751B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1AA594DC2423CE790039751B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		1A5160ED2423AE1900483CBA /* LoginChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				1AA594DB2423CE2F0039751B /* Helpers */,
 				1AA594DA2423B7040039751B /* View Controllers */,
 				1A5160EE2423AE1900483CBA /* AppDelegate.swift */,
 				1A5160F02423AE1900483CBA /* SceneDelegate.swift */,
@@ -82,6 +85,14 @@
 				1AA594D82423B6F00039751B /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1AA594DB2423CE2F0039751B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1AA594DC2423CE790039751B /* Utils.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			files = (
 				1A5160F32423AE1900483CBA /* ViewController.swift in Sources */,
 				1A5160EF2423AE1900483CBA /* AppDelegate.swift in Sources */,
+				1AA594DD2423CE790039751B /* Utils.swift in Sources */,
 				1AA594D52423B6B90039751B /* SingUpViewController.swift in Sources */,
 				1AA594D72423B6D50039751B /* LoginViewController.swift in Sources */,
 				1A5160F12423AE1900483CBA /* SceneDelegate.swift in Sources */,
