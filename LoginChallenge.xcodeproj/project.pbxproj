@@ -18,6 +18,7 @@
 		1AA594D92423B6F00039751B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D82423B6F00039751B /* HomeViewController.swift */; };
 		1AA594DD2423CE790039751B /* CustomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594DC2423CE790039751B /* CustomUtils.swift */; };
 		1AA594DF2423F1180039751B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AA594DE2423F1180039751B /* GoogleService-Info.plist */; };
+		F13573F76477956475E5630A /* Pods_LoginChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B40BA78EB1264D1AB0F187 /* Pods_LoginChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		1AA594D82423B6F00039751B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1AA594DC2423CE790039751B /* CustomUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUtils.swift; sourceTree = "<group>"; };
 		1AA594DE2423F1180039751B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24B40BA78EB1264D1AB0F187 /* Pods_LoginChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D86F4CA49DBEE398EAA34F8 /* Pods-LoginChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginChallenge.release.xcconfig"; path = "Target Support Files/Pods-LoginChallenge/Pods-LoginChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		FBA7D554103BD07C51D262F8 /* Pods-LoginChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginChallenge.debug.xcconfig"; path = "Target Support Files/Pods-LoginChallenge/Pods-LoginChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13573F76477956475E5630A /* Pods_LoginChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				1A5160ED2423AE1900483CBA /* LoginChallenge */,
 				1A5160EC2423AE1900483CBA /* Products */,
+				5B4B8E8F022777C99B1C4985 /* Pods */,
+				E00FD84385EC482432ECBDA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +105,24 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		5B4B8E8F022777C99B1C4985 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7D554103BD07C51D262F8 /* Pods-LoginChallenge.debug.xcconfig */,
+				9D86F4CA49DBEE398EAA34F8 /* Pods-LoginChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E00FD84385EC482432ECBDA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24B40BA78EB1264D1AB0F187 /* Pods_LoginChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A5160FF2423AE1E00483CBA /* Build configuration list for PBXNativeTarget "LoginChallenge" */;
 			buildPhases = (
+				F4FC73EE092E2F1A2FA8DFE3 /* [CP] Check Pods Manifest.lock */,
 				1A5160E72423AE1900483CBA /* Sources */,
 				1A5160E82423AE1900483CBA /* Frameworks */,
 				1A5160E92423AE1900483CBA /* Resources */,
+				D27EB22444BEFE02AE3A5B76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +191,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D27EB22444BEFE02AE3A5B76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginChallenge/Pods-LoginChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginChallenge/Pods-LoginChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginChallenge/Pods-LoginChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FC73EE092E2F1A2FA8DFE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A5160E72423AE1900483CBA /* Sources */ = {
@@ -318,6 +387,7 @@
 		};
 		1A5161002423AE1E00483CBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA7D554103BD07C51D262F8 /* Pods-LoginChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -335,6 +405,7 @@
 		};
 		1A5161012423AE1E00483CBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D86F4CA49DBEE398EAA34F8 /* Pods-LoginChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
