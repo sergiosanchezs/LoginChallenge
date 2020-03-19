@@ -17,6 +17,7 @@
 		1AA594D72423B6D50039751B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D62423B6D50039751B /* LoginViewController.swift */; };
 		1AA594D92423B6F00039751B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594D82423B6F00039751B /* HomeViewController.swift */; };
 		1AA594DD2423CE790039751B /* CustomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA594DC2423CE790039751B /* CustomUtils.swift */; };
+		1AA594DF2423F1180039751B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AA594DE2423F1180039751B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1AA594D62423B6D50039751B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1AA594D82423B6F00039751B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1AA594DC2423CE790039751B /* CustomUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUtils.swift; sourceTree = "<group>"; };
+		1AA594DE2423F1180039751B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				1AA594DA2423B7040039751B /* View Controllers */,
 				1A5160EE2423AE1900483CBA /* AppDelegate.swift */,
 				1A5160F02423AE1900483CBA /* SceneDelegate.swift */,
+				1AA594DE2423F1180039751B /* GoogleService-Info.plist */,
 				1A5160F42423AE1900483CBA /* Main.storyboard */,
 				1A5160F72423AE1E00483CBA /* Assets.xcassets */,
 				1A5160F92423AE1E00483CBA /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A5160FB2423AE1E00483CBA /* LaunchScreen.storyboard in Resources */,
+				1AA594DF2423F1180039751B /* GoogleService-Info.plist in Resources */,
 				1A5160F82423AE1E00483CBA /* Assets.xcassets in Resources */,
 				1A5160F62423AE1900483CBA /* Main.storyboard in Resources */,
 			);
