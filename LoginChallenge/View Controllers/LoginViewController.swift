@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -45,7 +46,72 @@ class LoginViewController: UIViewController {
     */
     
     
-    @IBAction func loginTapped(_ sender: Any) {
+    // Check the fields and validate that the data is correct.
+    // If everything is correct this method returns nil.
+    // Otherwise,, it returns the error message.
+    func validateFields() -> String? {
+         // Check that all fields are filled in
+        if usernameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+           passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+        {
+            return "Please fill in all the fields."
+        }
+        
+        // Check if the email is secure
+        let cleanedUsername = usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if CustomUtils.isEmailValid(cleanedUsername) == false {
+            // Password isn't secure enough
+            return "Please enter a valid email!"
+        }
+        
+        return nil
     }
+    
+    
+    @IBAction func loginTapped(_ sender: Any) {
+        // Validate Text Fields
+        let error = validateFields()
+        
+        // Check for errors
+        if error != nil { // There was an error
+            // Show error message
+            showError(error!)
+        } else {
+            // Create cleaned versions of the data
+            let userName = usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            // Signing in the user
+            Auth.auth().signIn(withEmail: userName, password: password) {(result, error) in
+                // Check for errors
+                if error != nil {
+                    // There was an error signIn the user
+                    self.showError(error!.localizedDescription)
+                } else {
+                    self.transitionToHome()
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    func showError(_ message:String){
+        errorLabel.text = message
+        errorLabel.alpha = 1
+    }
+    
+    func transitionToHome(){
+        
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Stroyboard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+        
+    }
+    
+    
     
 }
