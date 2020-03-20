@@ -22,6 +22,8 @@ class SingUpViewController: UIViewController {
     
     @IBOutlet weak var signUpButton: UIButton!
     
+    @IBOutlet weak var backButton: UIButton!
+    
     @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
@@ -40,6 +42,7 @@ class SingUpViewController: UIViewController {
         CustomUtils.styleTextField(emailTextField)
         CustomUtils.styleTextField(passwordTextField)
         CustomUtils.styleFilledButton(signUpButton)
+        CustomUtils.styleHollowButton(backButton)
     }
 
     /*

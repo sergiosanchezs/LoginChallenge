@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var backButton: UIButton!
+    
     @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
@@ -33,6 +35,7 @@ class LoginViewController: UIViewController {
         CustomUtils.styleTextField(usernameTextField)
         CustomUtils.styleTextField(passwordTextField)
         CustomUtils.styleFilledButton(loginButton)
+        CustomUtils.styleHollowButton(backButton)
     }
 
     /*
@@ -67,7 +70,6 @@ class LoginViewController: UIViewController {
         
         return nil
     }
-    
     
     @IBAction func loginTapped(_ sender: Any) {
         // Validate Text Fields
@@ -111,6 +113,8 @@ class LoginViewController: UIViewController {
         view.window?.makeKeyAndVisible()
         
     }
+    
+//    @IBAction func backTapped(_ sender: UIStoryboard) {}
     
     
     
