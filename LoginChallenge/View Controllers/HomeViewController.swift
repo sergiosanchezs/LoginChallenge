@@ -22,8 +22,17 @@ class HomeViewController: UIViewController {
     func setUpelements(){
         CustomUtils.styleHollowButton(logOutButton)
     }
-    
-    @IBAction func logOutTapped(_ sender: Any) {
-    }
 
+    @IBAction func logOutTapped(_ sender: Any) {
+        transitionToRoot()
+    }
+    
+    func transitionToRoot(){
+        
+        let rootViewController = storyboard?.instantiateViewController(identifier: Constants.Stroyboard.rootViewController) as? ViewController
+        
+        view.window?.rootViewController = rootViewController
+        view.window?.makeKeyAndVisible()
+        
+    }
 }

@@ -12,5 +12,6 @@ struct Constants {
     
     struct Stroyboard {
         static let homeViewController = "HomeVC"
+        static let rootViewController = "RootVC"
     }
 }

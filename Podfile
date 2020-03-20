@@ -12,4 +12,8 @@ target 'LoginChallenge' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
 
+source 'https://github.com/CocoaPods/Specs.git'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+
 end
