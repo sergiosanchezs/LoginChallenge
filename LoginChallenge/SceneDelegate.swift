@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  LoginChallenge
 //
-//  Created by Maria Fernanda on 19/3/20.
-//  Copyright © 2020 Maria Fernanda. All rights reserved.
+//  Created by Sergio Sanchez on 19/3/20.
+//  Copyright © 2020 Sergio Sanchez. All rights reserved.
 //
 
 import UIKit

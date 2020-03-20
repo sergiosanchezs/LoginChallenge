@@ -2,7 +2,7 @@
 //  SingUpViewController.swift
 //  LoginChallenge
 //
-//  Created by Maria Fernanda on 19/3/20.
+//  Created by Sergio Sanchez on 19/3/20.
 //  Copyright © 2020 Sergio Sanchez. All rights reserved.
 //
 
@@ -44,16 +44,6 @@ class SingUpViewController: UIViewController {
         CustomUtils.styleFilledButton(signUpButton)
         CustomUtils.styleHollowButton(backButton)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     // Check the fields and validate that the data is correct.
     // If everything is correct this method returns nil.

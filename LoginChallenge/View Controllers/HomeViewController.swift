@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  LoginChallenge
 //
-//  Created by Maria Fernanda on 19/3/20.
+//  Created by Sergio Sanchez on 19/3/20.
 //  Copyright © 2020 Sergio Sanchez. All rights reserved.
 //
 
