@@ -148,6 +148,7 @@
 				1A5160E82423AE1900483CBA /* Frameworks */,
 				1A5160E92423AE1900483CBA /* Resources */,
 				D27EB22444BEFE02AE3A5B76 /* [CP] Embed Pods Frameworks */,
+				5D9C5819287BEB6AC9BD7BF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +208,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5D9C5819287BEB6AC9BD7BF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginChallenge/Pods-LoginChallenge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginChallenge/Pods-LoginChallenge-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginChallenge/Pods-LoginChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D27EB22444BEFE02AE3A5B76 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
